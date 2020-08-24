@@ -1,0 +1,244 @@
+{
+    "titl":"test blog",
+    "author":"clark",
+    "description":"纯手动搭建",
+    "language":"zh-hans",
+    "root": "./",
+    "head_title": "统一规范化保存笔记",
+    "head_description": "wiki",
+    "head_keywords": "gitbook,文档部署",
+    "gitbook": "3.2.3",
+    "output.name": "site",
+    "links":{
+        "siderbar":"clark-xm.xyz"
+    },
+    "styles": {
+        "website": "./assets/website/website.css",
+        "ebook": "./assets/website/ebook.css",
+        "pdf": "./assets/website/pdf.css",
+        "mobi": "./assets/website/mobi.css",
+        "epub": "./assets/website/epub.css"
+    },
+    "plugins": [
+        "theme-api","theme-comscore","theme-default","theme-faq",
+        "search-pro",
+        "-insert-logo",
+        "-highlight","prism","prism-themes",
+        "code",
+        "copy-code-button",
+        "github" ,
+        "-lunr", "-search","search-plus",
+        "-back-to-top-button","-page-toc-button","simple-page-toc",
+        "chapter-fold",
+        "-expandable-chapters-small","-page-treeview","-expandable-chapters",
+        "advanced-emoji",
+        "emphasize",
+        "splitter",
+        "-sharing", "sharing-plus",
+        "tbfed-pagefooter",
+        "page-copyright",
+        "sectionx",
+        "-fontsettings",
+        "ancre-navigation",
+        "klipse",
+        "donate",
+        "change_girls",
+        "alerts",
+        "pageview-count",
+        "auto-scroll-table",
+        "popup",
+        "lightbox",
+        "click-reveal",
+        "custom-favicon",
+        "-gitalk","-disqus",
+        "-theme-official",
+        "-sitemap-general",
+        "-terminal",
+        "versions-select",
+        "-rss",
+        "include-codeblock","ace",
+        "edit-link",
+        "-musicxml",
+        "local-video"
+
+    ],
+    "pluginsConfig": {
+        "theme-api": {
+            "theme": "dark"
+        },
+        
+       
+        "theme-default": {
+            "showLevel": true
+        },
+        "fontsettings": {
+            "theme": "sepia",
+            "family": "serif",
+            "size":  1
+        },
+        "prism": {
+            "css": [
+                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+            ]
+        },
+        "insert-logo": {
+          "url": "./assets/website/images/logo.png",
+          "style": "background: none; max-height: 30px; min-height: 30px"
+        },
+        "code": {
+            "copyButtons": false
+        },
+        "copy-code-button":{
+
+        },
+        "github" :{
+            "url": "https://github.com/Garretming/blog"
+        },
+        "search-pro":{},
+        "back-to-top-button":{},
+        "chapter-fold":{},
+        "advanced-emoji":{},
+        "sharing": {
+            "douban": false,
+            "facebook": false,
+            "google": true,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": true,
+            "linkedin": true,
+            "messenger": false,
+            "pocket": false,
+            "qq": false,
+            "qzone": true,
+            "stumbleupon": false,
+            "twitter": false,
+            "viber": false,
+            "vk": false,
+            "weibo": true,
+            "whatsapp": false,
+            "all": [
+                "douban", "facebook", "google", "hatenaBookmark", 
+                "instapaper", "linkedin","twitter", "weibo", 
+                "messenger","qq", "qzone","viber","vk","weibo",
+                "pocket", "stumbleupon","whatsapp"
+            ]
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy clark-xm.xyz 2019",
+            "modify_label": "该文件修订时间:",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "page-copyright": {
+            "description": "modified at",
+            "signature": "clark",
+            "wisdom": "Designer, Frontend Developer & overall web enthusiast",
+            "format": "YYYY-MM-dd hh:mm:ss",
+            "copyright": "Copyright &#169; clark",
+            "timeColor": "#666",
+            "copyrightColor": "#666",
+            "utcOffset": "8",
+            "style": "normal",
+            "noPowered": false
+        },
+        "page-treeview": {
+            "copyright": "Copyright &#169; clark",
+            "minHeaderCount": "2",
+            "minHeaderDeep": "2"
+        },
+        "simple-page-toc": {
+            "maxDepth": 3,
+            "skipFirstH1": true
+        },
+        "page-toc-button": {
+            "maxTocDepth": 2,
+            "minTocSize": 2
+        },
+        "donate": {
+            "wechat": "./assets/website/images/qr-wechat-255.png",
+            "alipay": "./assets/website/images/qr-alipay-255.png",
+            "title": "",
+            "button": "赏",
+            "alipayText": "支付宝打赏",
+            "wechatText": "微信打赏"
+        },
+        "change_girls" : {
+            "time" : 10,
+            "urls" : [
+                "girlUrl1", "girlUrl2",""
+            ]
+        },
+        "flexible-alerts": {
+            "style": "callout",
+            "comment": {
+              "label": "Comment",
+              "icon": "fa fa-comments",
+              "className": "info"
+            }
+        },
+        "favicon":  "assets/website/images/favicon.ico",
+        "hide-element": {
+            "elements": [".gitbook-link"]
+        },
+        "sitemap-general": {
+            "prefix": "http://clark-xm.xyz/"
+        },
+        "terminal": {
+            "copyButtons": true,
+            "fade": false,
+            "style": "flat"
+        },
+        "edit-link": {
+            "base": "https://github.com/Garretming/blog/edit/master",
+            "label": "Edit This Page"
+        },
+        "sectionx": {
+            "tag": "b"
+        },
+        "rss": {
+            "title": "GitBook 使用教程",
+            "description": "记录 GitBook 的配置和一些插件的使用",
+            "author": "clark",
+            "feed_url": "http://gitbook.clark-xm.xyz/rss",
+            "site_url": "http://gitbook.clark-xm.xyz/",
+            "managingEditor": "me@clark-xm.xyz",
+            "webMaster": "me@clark-xm.xyz",
+            "categories": [
+                "gitbook"
+            ]
+        },
+        "include-codeblock": {
+            "template":"ace",
+            "unindent": true,
+            "theme": "monokai",
+            "edit": true
+            
+        },
+        "versions": {
+            "options": [
+                {
+                    "value": "http://gitbook.clark-xm.xyz",
+                    "text": "v3.2.3"
+                },
+                {
+                    "value": "http://gitbook.clark-xm.xyz/v2/",
+                    "text": "v2.6.4"
+                }
+            ]
+        }
+        
+
+      
+
+
+
+
+
+  
+
+
+  
+
+    }
+    
+        
+}
